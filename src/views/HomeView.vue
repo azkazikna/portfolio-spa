@@ -465,7 +465,7 @@ import TheWelcome from '../components/TheWelcome.vue'
                     <div class="relative">
                         <div class="element-animate">
                         </div>
-                        <img src="@/assets/img/achievement/sertifikat best student.webp" alt="Pelita Nusantara Vocational
+                        <img src="@/assets/img/achievement/sertifikat_best_student.webp" alt="Pelita Nusantara Vocational
                                 Highschool Certificate"
                             class="transition duration-500 ease-in-out w-full h-56 object-cover object-top">
                     </div>
@@ -482,7 +482,7 @@ import TheWelcome from '../components/TheWelcome.vue'
                     <div class="relative">
                         <div class="element-animate">
                         </div>
-                        <img src="@/assets/img/achievement/sertifikat best student rpl.webp" alt="Pelita Nusantara Vocational
+                        <img src="@/assets/img/achievement/sertifikat_rpl.webp" alt="Pelita Nusantara Vocational
                                 Highschool Certificate"
                             class="transition duration-500 ease-in-out w-full h-56 object-cover object-top">
                     </div>
