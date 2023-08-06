@@ -1,0 +1,558 @@
+<script setup>
+import TheWelcome from '../components/TheWelcome.vue'
+</script>
+
+<template>
+  <!-- hero section start -->
+  <section id="hero" class="flex justify-center pt-36 pb-32 lg:pt-44 lg:pb-48 relative">
+        <div class="px-4 lg:px-32 xl:px-52">
+            <div class="w-full relative">
+                <div class="w-4 h-4 bg-redval absolute left-full -z-20"></div>
+                <div class="w-3 h-3 bg-redval absolute left-2/3 top-1/2 -z-20"></div>
+                <div class="w-5 h-5 bg-redval absolute left-full top-full -z-20"></div>
+                <p class="text-base dark:font-extralight text-textLight dark:text-primary mb-5 lg:mb-10 h-5" id="typed">
+                </p>
+                <div class="">
+                    <div class="w-14 h-2 bg-lightval"></div>
+                    <p class="font-bold lg:font-black font-tungsten text-6xl lg:text-7xl text-lightval select-none">
+                        00.</p>
+                </div>
+                <h1
+                    class="dark:text-white text-textLight font-tungsten text-5xl lg:text-8xl font-bold lg:font-black mb-2 animate-this uppercase">
+                    Azkazikna Ageung Laksana</h1>
+                <h1
+                    class="dark:text-secondary text-textLight font-tungsten text-5xl lg:text-8xl font-bold lg:font-black mb-7 lg:mb-7 animate-this uppercase">
+                    I create solutions from <span class="text-redval">coding</span>.</h1>
+                <p class="text-base dark:text-secondary text-paraVal lg:w-1/2 mb-9 animate-this2 overflow-hidden">
+                    I am a <a href="#" class="font-semibold text-textLight dark:text-white"
+                        data-popover-target="popover-fullstack">Fullstack
+                        Web
+                        Developer</a> from Bogor,
+                    Indonesia. I enjoy coding logic and structure
+                    and always strive to write elegant and efficient code, whether it is HTML, CSS or JS. I have
+                    designed
+                    user-friendly interfaces for the websites I create.</p>
+                <div class="flex gap-10 items-center">
+                    <a href="dist/pdf/resume.pdf"
+                        class="dark:text-white font-semibold rounded transition duration-500 ease-in-out hover:scale-105"
+                        data-barba-prevent="all">
+                        <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"
+                            class="inline-block mr-2">
+                            <g clip-path="url(#clip0_75_184)">
+                                <path
+                                    d="M27.7083 29.1667H8.74999C4.19178 29.1694 0.395041 25.6723 0.0238517 21.1292C-0.347338 16.5861 2.83138 12.5191 7.32957 11.7819C9.39998 8.11108 13.2856 5.83845 17.5 5.83324C20.1279 5.82331 22.6806 6.71022 24.7362 8.34749C26.7547 9.94854 28.1897 12.1697 28.8196 14.6679C32.5878 15.2469 35.2739 18.631 34.9825 22.4322C34.6912 26.2335 31.5207 29.1687 27.7083 29.1667ZM17.5 8.74998C14.3379 8.75372 11.4226 10.4593 9.86999 13.214L9.18749 14.4375L7.80353 14.6635C4.81436 15.1643 2.70667 17.8708 2.95342 20.8916C3.20018 23.9124 5.71917 26.241 8.74999 26.25H27.7083C29.9958 26.2524 31.899 24.4921 32.0749 22.2114C32.2508 19.9306 30.64 17.8994 28.3792 17.551L26.46 17.2594L25.9904 15.3752C25.021 11.4768 21.5171 8.74264 17.5 8.74998ZM17.5 23.3333L11.6667 17.5H15.3854V13.125H19.6146V17.5H23.3333L17.5 23.3333Z"
+                                    class="fill-textLight dark:fill-white " />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_75_184">
+                                    <rect width="35" height="35" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        Download CV</a>
+                    <div class="p-2 border-[1px] border-borderval dark:border-primary relative">
+                        <div class="w-2 h-3 bg-bgVal dark:bg-background top-1/2 absolute -translate-y-1/2 -left-1">
+                        </div>
+                        <div class="w-2 h-3 bg-bgVal dark:bg-background top-1/2 absolute -translate-y-1/2 -right-1">
+                        </div>
+                        <div class="w-2 h-2 bg-bgVal z-[9] dark:bg-background absolute top-1 left-1">
+                        </div>
+                        <div class="w-2 h-2 bg-bgVal z-[9] dark:bg-background absolute bottom-1 right-1">
+                        </div>
+                        <a href="#"
+                            class="flex items-center relative buttonAnimate text-textLight dark:text-primary font-semibold px-7 py-2 border-[1px] border-textLight dark:border-primary hover:text-bgLight dark:hover:text-background group transition duration-300 ease-in-out overflow-hidden">
+                            <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"
+                                class="inline-block mr-2 group-hover:fill-bgLight dark:group-hover:fill-background fill-textLight dark:fill-primary transition duration-300 ease-in-out">
+                                <path
+                                    d="M17.5 32.0833C9.44585 32.0833 2.91667 25.5541 2.91667 17.5C2.91667 9.44584 9.44585 2.91666 17.5 2.91666C25.5542 2.91666 32.0833 9.44584 32.0833 17.5C32.0745 25.5505 25.5505 32.0745 17.5 32.0833ZM17.5 5.83332C11.0567 5.83332 5.83333 11.0567 5.83333 17.5C5.83333 23.9433 11.0567 29.1667 17.5 29.1667C23.9433 29.1667 29.1667 23.9433 29.1667 17.5C29.1594 11.0597 23.9403 5.84056 17.5 5.83332ZM17.5 24.7917L10.2083 17.5L12.2646 15.4437L16.0417 19.2062V10.2083H18.9583V19.2062L22.7354 15.4437L24.7917 17.5L17.5 24.7917Z" />
+                            </svg>Portfolio</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="flex lg:flex-col lg:absolute lg:left-8 bottom-7 justify-start lg:justify-center items-center mt-10 lg:mt-0 gap-5">
+                <a href="https://twitter.com/Azkazikna3" target="_blank">
+                    <svg class="fill-textLight dark:fill-secondary dark:hover:fill-white hover:scale-110 transition duration-500 ease-in-out"
+                        width="25" height="25" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.4302 4.6999C22.446 4.90615 22.446 5.11245 22.446 5.31871C22.446 11.6098 17.2906 18.8586 7.86802 18.8586C4.96509 18.8586 2.26841 18.0777 0 16.7223C0.412451 16.7665 0.808984 16.7812 1.2373 16.7812C3.63257 16.7812 5.83755 16.0298 7.59834 14.748C5.3458 14.7038 3.45811 13.3336 2.80771 11.4478C3.125 11.4919 3.44224 11.5214 3.77539 11.5214C4.2354 11.5214 4.69546 11.4624 5.12373 11.3594C2.77603 10.9173 1.01519 9.00202 1.01519 6.6889V6.62999C1.69727 6.98359 2.49048 7.20458 3.33115 7.23401C1.95107 6.37947 1.04692 4.92089 1.04692 3.27075C1.04692 2.38677 1.30068 1.57644 1.74487 0.869241C4.26709 3.75696 8.05835 5.64279 12.3096 5.84909C12.2303 5.49549 12.1827 5.12719 12.1827 4.75885C12.1827 2.1363 14.4669 0 17.3064 0C18.7816 0 20.1141 0.574596 21.05 1.50279C22.208 1.29654 23.3184 0.898719 24.302 0.353601C23.9212 1.45862 23.1122 2.38682 22.0494 2.97611C23.0805 2.87303 24.0799 2.60777 24.9999 2.23947C24.302 3.18236 23.4295 4.02213 22.4302 4.6999Z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/azkazikna/" target="_blank">
+                    <svg class="fill-textLight dark:fill-secondary dark:hover:fill-white hover:scale-110 transition duration-500 ease-in-out"
+                        width="25" height="25" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.946 5.24513C7.84058 5.24513 5.33569 7.57163 5.33569 10.456C5.33569 13.3403 7.84058 15.6668 10.946 15.6668C14.0515 15.6668 16.5564 13.3403 16.5564 10.456C16.5564 7.57163 14.0515 5.24513 10.946 5.24513ZM10.946 13.8437C8.93921 13.8437 7.29858 12.3244 7.29858 10.456C7.29858 8.58749 8.93433 7.06824 10.946 7.06824C12.9578 7.06824 14.5935 8.58749 14.5935 10.456C14.5935 12.3244 12.9529 13.8437 10.946 13.8437ZM18.0945 5.03198C18.0945 5.70771 17.5085 6.24739 16.7859 6.24739C16.0584 6.24739 15.4773 5.70318 15.4773 5.03198C15.4773 4.36079 16.0632 3.81658 16.7859 3.81658C17.5085 3.81658 18.0945 4.36079 18.0945 5.03198ZM21.8103 6.26553C21.7273 4.63743 21.3269 3.19527 20.0427 2.00708C18.7634 0.818882 17.2107 0.447005 15.4578 0.365373C13.6511 0.270136 8.23608 0.270136 6.42944 0.365373C4.6814 0.44247 3.12866 0.814347 1.84448 2.00254C0.560303 3.19074 0.164795 4.63289 0.0769043 6.26099C-0.0256348 7.93898 -0.0256348 12.9684 0.0769043 14.6464C0.159912 16.2745 0.560303 17.7166 1.84448 18.9048C3.12866 20.093 4.67651 20.4649 6.42944 20.5465C8.23608 20.6418 13.6511 20.6418 15.4578 20.5465C17.2107 20.4694 18.7634 20.0976 20.0427 18.9048C21.322 17.7166 21.7224 16.2745 21.8103 14.6464C21.9128 12.9684 21.9128 7.94351 21.8103 6.26553ZM19.4763 16.4468C19.0955 17.3357 18.3582 18.0205 17.3962 18.3788C15.9558 18.9094 12.5378 18.7869 10.946 18.7869C9.35425 18.7869 5.9314 18.9048 4.49585 18.3788C3.53882 18.025 2.80151 17.3402 2.41577 16.4468C1.84448 15.109 1.97632 11.9344 1.97632 10.456C1.97632 8.97751 1.84937 5.79841 2.41577 4.4651C2.79663 3.57622 3.53394 2.89142 4.49585 2.53315C5.93628 2.00254 9.35425 2.12499 10.946 2.12499C12.5378 2.12499 15.9607 2.00708 17.3962 2.53315C18.3533 2.88688 19.0906 3.57168 19.4763 4.4651C20.0476 5.80295 19.9158 8.97751 19.9158 10.456C19.9158 11.9344 20.0476 15.1135 19.4763 16.4468Z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/Azkazikna" target="_blank">
+                    <svg class="fill-textLight dark:fill-secondary dark:hover:fill-white hover:scale-110 transition duration-500 ease-in-out"
+                        width="25" height="25" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.10059 18.105C8.10059 18.1957 7.98828 18.2682 7.84668 18.2682C7.68555 18.2818 7.57324 18.2093 7.57324 18.105C7.57324 18.0143 7.68555 17.9417 7.82715 17.9417C7.97363 17.9281 8.10059 18.0007 8.10059 18.105ZM6.58203 17.9009C6.54785 17.9916 6.64551 18.0959 6.79199 18.1231C6.91895 18.1684 7.06543 18.1231 7.09473 18.0324C7.12402 17.9417 7.03125 17.8374 6.88477 17.7966C6.75781 17.7648 6.61621 17.8102 6.58203 17.9009ZM8.74023 17.8238C8.59863 17.8555 8.50098 17.9417 8.51562 18.046C8.53027 18.1367 8.65723 18.1957 8.80371 18.1639C8.94531 18.1322 9.04297 18.046 9.02832 17.9553C9.01367 17.8691 8.88184 17.8102 8.74023 17.8238ZM11.9531 0.445312C5.18066 0.445312 0 5.22076 0 11.5109C0 16.5404 3.4082 20.8442 8.27637 22.3589C8.90137 22.4632 9.12109 22.1049 9.12109 21.8101C9.12109 21.529 9.10645 19.978 9.10645 19.0256C9.10645 19.0256 5.68848 19.7058 4.9707 17.6741C4.9707 17.6741 4.41406 16.3544 3.61328 16.0143C3.61328 16.0143 2.49512 15.3023 3.69141 15.3159C3.69141 15.3159 4.90723 15.4066 5.57617 16.4859C6.64551 18.2365 8.4375 17.7331 9.13574 17.4338C9.24805 16.7082 9.56543 16.2048 9.91699 15.9054C7.1875 15.6243 4.43359 15.2569 4.43359 10.8942C4.43359 9.64701 4.80469 9.02117 5.58594 8.22299C5.45898 7.92821 5.04395 6.71281 5.71289 5.14367C6.7334 4.84889 9.08203 6.36814 9.08203 6.36814C10.0586 6.11418 11.1084 5.98266 12.1484 5.98266C13.1885 5.98266 14.2383 6.11418 15.2148 6.36814C15.2148 6.36814 17.5635 4.84435 18.584 5.14367C19.2529 6.71734 18.8379 7.92821 18.7109 8.22299C19.4922 9.02571 19.9707 9.65155 19.9707 10.8942C19.9707 15.2705 17.0947 15.6197 14.3652 15.9054C14.8145 16.2637 15.1953 16.944 15.1953 18.0097C15.1953 19.538 15.1807 21.4292 15.1807 21.8011C15.1807 22.0958 15.4053 22.4541 16.0254 22.3498C20.9082 20.8442 24.2188 16.5404 24.2188 11.5109C24.2188 5.22076 18.7256 0.445312 11.9531 0.445312ZM4.74609 16.0868C4.68262 16.1322 4.69727 16.2365 4.78027 16.3227C4.8584 16.3952 4.9707 16.427 5.03418 16.368C5.09766 16.3227 5.08301 16.2184 5 16.1322C4.92188 16.0596 4.80957 16.0279 4.74609 16.0868ZM4.21875 15.7195C4.18457 15.7785 4.2334 15.851 4.33105 15.8964C4.40918 15.9417 4.50684 15.9281 4.54102 15.8646C4.5752 15.8057 4.52637 15.7331 4.42871 15.6878C4.33105 15.6605 4.25293 15.6741 4.21875 15.7195ZM5.80078 17.334C5.72266 17.393 5.75195 17.529 5.86426 17.6152C5.97656 17.7195 6.11816 17.7331 6.18164 17.6605C6.24512 17.6016 6.21582 17.4655 6.11816 17.3793C6.01074 17.275 5.86426 17.2614 5.80078 17.334ZM5.24414 16.6673C5.16602 16.7127 5.16602 16.8306 5.24414 16.9349C5.32227 17.0392 5.4541 17.0846 5.51758 17.0392C5.5957 16.9803 5.5957 16.8623 5.51758 16.758C5.44922 16.6537 5.32227 16.6084 5.24414 16.6673Z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/azkazikna/" target="_blank">
+                    <svg class="fill-textLight dark:fill-secondary dark:hover:fill-white hover:scale-110 transition duration-500 ease-in-out"
+                        width="22" height="22" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.89648 20.8424H0.361328V7.27793H4.89648V20.8424ZM2.62646 5.42762C1.17627 5.42762 0 4.31198 0 2.96506C1.03799e-08 2.31808 0.276716 1.69761 0.769274 1.24013C1.26183 0.782645 1.92988 0.525635 2.62646 0.525635C3.32305 0.525635 3.9911 0.782645 4.48366 1.24013C4.97621 1.69761 5.25293 2.31808 5.25293 2.96506C5.25293 4.31198 4.07617 5.42762 2.62646 5.42762ZM21.8701 20.8424H17.3447V14.2393C17.3447 12.6656 17.3105 10.6475 14.9868 10.6475C12.6289 10.6475 12.2676 12.3572 12.2676 14.1259V20.8424H7.73731V7.27793H12.0869V9.12825H12.1504C12.7559 8.0625 14.2349 6.9378 16.4414 6.9378C21.0312 6.9378 21.875 9.74502 21.875 13.3912V20.8424H21.8701Z" />
+                    </svg>
+                </a>
+                <a href="https://codepen.io/azkazikna" target="_blank">
+                    <svg class="fill-textLight dark:fill-secondary dark:hover:fill-white hover:scale-110 transition duration-500 ease-in-out"
+                        width="25" height="25" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24.5256 7.91981L13.0999 0.845065C12.7099 0.622165 12.2937 0.620124 11.9001 0.845065L0.474316 7.91981C0.181348 8.10117 0 8.42515 0 8.74905V15.8237C0 16.1477 0.181348 16.4716 0.474365 16.653L11.9001 23.7288C12.2901 23.9517 12.7063 23.9537 13.0999 23.7288L24.5257 16.653C24.8187 16.4717 25 16.1477 25 15.8237V8.74905C25 8.42515 24.8187 8.10117 24.5256 7.91981ZM13.5742 3.54013L21.9866 8.74905L18.2338 11.0814L13.5742 8.19187V3.54013ZM11.4258 3.54013V8.19187L6.76616 11.0814L3.01338 8.74905L11.4258 3.54013ZM2.14844 10.6149L4.84097 12.2864L2.14844 13.9579V10.6149ZM11.4258 21.0327L3.01338 15.8238L6.76616 13.4914L11.4258 16.381V21.0327ZM12.5 14.6447L8.70532 12.2864L12.5 9.92817L16.2947 12.2864L12.5 14.6447ZM13.5742 21.0327V16.381L18.2338 13.4914L21.9866 15.8238L13.5742 21.0327ZM22.8516 13.9579L20.159 12.2864L22.8516 10.6149V13.9579Z" />
+                    </svg>
+                </a>
+                <span class="bg-secondary w-20 h-[1px] lg:w-[1px] lg:h-20"></span>
+            </div>
+        </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- About me section start-->
+    <section id="about" class="pb-32 lg:pb-48">
+        <div class="px-4 lg:px-32 xl:px-52 lg:flex lg:gap-11">
+            <div class="w-full">
+                <div class="w-full flex items-center gap-5">
+                    <h4 class="font-bold lg:font-black font-tungsten dark:text-white text-4xl lg:text-5xl uppercase">
+                        About
+                        me</h4>
+                    <span class="w-1/2 h-[1px] bg-textLight dark:bg-white block lg:w-3/4"></span>
+                </div>
+                <p class="mt-14 mb-7 dark:text-secondary text-paraVal">
+                    I am a graduate of Vocational Highschool majoring in Software Engineering and have an
+                    interest in web development and UI/UX design. Studying web development for 3 years has given
+                    me a lot of flying hours in terms of coding but it doesn't make me feel satisfied.
+                    <br><br>
+                    Now I'm exploring the PHP framework, Laravel. As a Programmer/Developer I will continue to
+                    hone and improve my skills in any case whether it's problem-solving, etc.
+                    <br><br>
+                    Here are a few technologies I’ve been working with recently:
+                </p>
+                <div class="flex gap-20">
+                    <ul class="text-primaryLight dark:text-primary">
+                        <li>JavaScript (ES6+)</li>
+                        <li>Bootstrap</li>
+                        <li>Tailwindcss</li>
+                    </ul>
+                    <ul class="text-primaryLight dark:text-primary">
+                        <li>CodeIgniter</li>
+                        <li>WordPress</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full mt-16">
+                <div class="w-full">
+                    <div
+                        class="w-[300px] h-[300px] lg:w-[400px] border-2 border-textLight dark:border-primary mx-auto relative">
+                        <img src="@/assets/img/azka.webp" alt="Azkazikna"
+                            class="absolute -left-7 -top-7 w-[300px] h-[300px] lg:w-[400px] object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About me section end-->
+
+    <!-- work section start -->
+    <section id="work" class="pb-16 lg:pb-12">
+        <div class="container lg:w-[60%] mx-auto px-4">
+            <div class="w-full flex items-center gap-5">
+                <h4
+                    class="font-bold lg:font-black font-tungsten dark:text-white text-4xl lg:text-5xl grow-[1] text-redval uppercase">
+                    Where I
+                    have worked</h4>
+                <span class="w-1/2 h-[1px] bg-textLight dark: block grow-[5]"></span>
+            </div>
+        </div>
+        <div class="container lg:w-[60%] mx-auto px-4 mt-14 lg:flex gap-10">
+            <div class="w-full lg:w-1/2">
+                <input type="radio" id="freelance" value="freelance" v-model="activeTab" class="hidden">
+                <label for="freelance"
+                    class="text-base dark:font-extralight dark:text-secondary px-4 py-3 border-l-[1px] border-secondary hover:bg-primaryLight dark:hover:bg-primary hover:bg-opacity-20 dark:hover:bg-opacity-20 block transition duration-300 ease-in cursor-pointer">Freelance</label>
+                <input type="radio" id="jgu" value="jgu" v-model="activeTab" class="hidden">
+                <label for="jgu"
+                    class="text-base dark:font-extralight dark:text-secondary px-4 py-3 border-l-[1px] border-secondary hover:bg-primaryLight dark:hover:bg-primary hover:bg-opacity-20 dark:hover:bg-opacity-20 block transition duration-300 ease-in cursor-pointer">Internship
+                    in JGU</label>
+            </div>
+            <div class="text-content relative mt-10 lg:mt-0 overflow-auto w-full">
+                <div v-if="activeTab === 'freelance'">
+                    <h4 class="font-semibold dark:text-white text-4xl lg:text-5xl font-tungsten">Fullstack Web
+                        Developer <span class="text-redval dark:text-primary">@Freelance</span></h4>
+                    <h5 class="font-semibold dark:text-white text-base lg:text-lg">Jun 2021 - Present</h5>
+                    <ul class="mt-7 text-paraVal">
+                        <li><span class="relative -top-[5px]">Create a news website "Youth of the Nation" using
+                                Wordpress.</span></li>
+                        <li><span class="relative -top-[5px]">Create a Laboratory Information Management System
+                                (LIMS) for Delta Indonesia Lab company.</span></li>
+                        <li><span class="relative -top-[5px]">Create a web-based "Found and Lost" application,
+                                which is a website like social media to post found/lost items.</span></li>
+                        <li><span class="relative -top-[5px]">Create a web-based "Command Control Center Polsek
+                                Cibarusah" application, an application used by the Cibarusah police to
+                                facilitate community services.</span></li>
+                    </ul>
+                </div>
+                <div v-if="activeTab === 'jgu'">
+                    <h4 class="font-semibold dark:text-white text-4xl lg:text-5xl font-tungsten">Web Developer
+                        <span class="text-redval dark:text-primary">@Jakarta Global University</span>
+                    </h4>
+                    <h5 class="font-semibold dark:text-white text-base lg:text-lg">Jan 2021 - August 2021</h5>
+                    <ul class="mt-7 text-paraVal">
+                        <li>Create a landing page for informatics engineering
+                            majors.</li>
+                        <li>Handling bugs in web applications.</li>
+                        <li>Make a project about lecturer scheduling by
+                            implementing the
+                            software development life cycle.</li>
+                        <li>Create a lecturer workload application project by
+                            collaborating with
+                            the team.</li>
+                        <li>Take responsibility for making project about
+                            transcript
+                            printing application.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- work section end -->
+
+    <!-- built section start -->
+    <section id="built" class="pb-48 flex justify-center">
+        <div class="container lg:w-[85%] px-4 relative">
+            <div class="stroke font-tungsten text-7xl lg:text-[200px] absolute -bottom-14 right-0 uppercase">
+                Some Things
+                I've
+                built
+            </div>
+            <div class="w-full flex items-center gap-5 justify-center mb-10">
+                <h4
+                    class="font-bold lg:font-black font-tungsten dark:text-white text-4xl lg:text-5xl grow-[1] uppercase">
+                    Some
+                    Things I've built
+                </h4>
+                <span class="w-1/2 h-[1px] bg-textLight dark: block lg:grow-[5]"></span>
+            </div>
+            <swiper
+            :slides-per-view="3"
+            :space-between="30"
+            :pagination="{
+                clickable: true,
+            }"
+            :loop="true"
+            :auto-height="true"
+            :autoplay="{
+                delay: 2500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true
+            }"
+            :breakpoints="{
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                1520: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+            }"
+            class="cursor-grab"
+            >
+                <swiper-slide class="overflow-hidden group border-[0.2px] border-paraVal">
+                    <div class="overflow-hidden">
+                        <img src="@/assets/img/project/lsp.webp" alt="Web LSP" class="">
+                    </div>
+                    <div
+                        class="card-body px-6 py-5 bg-bgVal dark:bg-project group-hover:bg-textLight transition duration-300">
+                        <h5
+                            class="font-semibold lg:text-lg text-textLight dark:text-secondary mb-2 group-hover:text-white transition duration-300">
+                            Professional Certification Registration</h5>
+                        <h6
+                            class="text-paraVal text-sm font-medium dark:text-secondary mb-5 transition duration-300">
+                            Registration App – Fullstack • 2021</h6>
+                        <div class="flex items-center gap-3">
+                            <img src="@/assets/img/icon/codeigniter.svg" alt="Codeigniter"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-ci">
+                            <img src="@/assets/img/icon/bootstrap-5-1.svg" alt="Bootstrap"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-bs">
+                            <img src="@/assets/img/icon/gsap-greensock.svg" alt="GSAP"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-gsap">
+                            <img src="@/assets/img/icon/phpmailer-1.svg" alt="PHPMailer"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-mailer">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="overflow-hidden group border-[0.2px] border-paraVal">
+                    <img src="@/assets/img/project/lostandfound.svg" alt="Lost and Found" class="">
+                    <div
+                        class="card-body px-6 py-5 bg-bgVal dark:bg-project group-hover:bg-textLight transition duration-300">
+                        <h5
+                            class="font-semibold lg:text-lg text-textLight dark:text-secondary mb-2 group-hover:text-white transition duration-300">
+                            Lost and Found</h5>
+                        <h6
+                            class="text-paraVal text-sm font-medium dark:text-secondary mb-5 transition duration-300">
+                            Social Media App – Fullstack • 2022</h6>
+                        <div class="flex items-center gap-3">
+                            <img src="@/assets/img/icon/codeigniter.svg" alt="Codeigniter"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-ci">
+                            <img src="@/assets/img/icon/bootstrap-5-1.svg" alt="Bootstrap"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-bs">
+                            <img src="@/assets/img/icon/phpmailer-1.svg" alt="PHPMailer"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-mailer">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="overflow-hidden group border-[0.2px] border-paraVal">
+                    <img src="@/assets/img/project/libraryJGU.webp" alt="Library JGU" class="">
+                    <div
+                        class="card-body px-6 py-5 bg-bgVal dark:bg-project group-hover:bg-textLight transition duration-300">
+                        <h5
+                            class="font-semibold lg:text-lg text-textLight dark:text-secondary mb-2 group-hover:text-white transition duration-300">
+                            Library JGU</h5>
+                        <h6
+                            class="text-paraVal text-sm font-medium dark:text-secondary mb-5 transition duration-300">
+                            E-Library App – Fullstack • 2022</h6>
+                        <div class="flex items-center gap-3">
+                            <img src="@/assets/img/icon/codeigniter.svg" alt="Codeigniter"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-ci">
+                            <img src="@/assets/img/icon/tailwind-css-2.svg" alt="Tailwind"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-tailwind">
+                            <img src="@/assets/img/icon/gsap-greensock.svg" alt="GSAP"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-gsap">
+                            <img src="@/assets/img/icon/figma.svg" alt="Figma"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-figma">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="overflow-hidden group border-[0.2px] border-paraVal">
+                    <img src="@/assets/img/project/evoting.webp" alt="Web Evoting" class="">
+                    <div
+                        class="card-body px-6 py-5 bg-bgVal dark:bg-project group-hover:bg-textLight transition duration-300">
+                        <h5
+                            class="font-semibold lg:text-lg text-textLight dark:text-secondary mb-2 group-hover:text-white transition duration-300">
+                            E-Voting PENUS</h5>
+                        <h6
+                            class="text-paraVal text-sm font-medium dark:text-secondary mb-5 transition duration-300">
+                            E-Voting App – Fullstack • 2022</h6>
+                        <div class="flex items-center gap-3">
+                            <img src="@/assets/img/icon/codeigniter.svg" alt="Codeigniter"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-ci">
+                            <img src="@/assets/img/icon/bootstrap-5-1.svg" alt="Bootstrap"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-bs">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="overflow-hidden group border-[0.2px] border-paraVal">
+                    <img src="@/assets/img/project/web3.webp" alt="Web 3 Tailwind" class="">
+                    <div
+                        class="card-body px-6 py-5 bg-bgVal dark:bg-project group-hover:bg-textLight transition duration-300">
+                        <h5
+                            class="font-semibold lg:text-lg text-textLight dark:text-secondary mb-2 group-hover:text-white transition duration-300">
+                            Web3
+                            Landing Page</h5>
+                        <h6
+                            class="text-paraVal text-sm font-medium dark:text-secondary mb-5 transition duration-300">
+                            Landing Page – Frontend • 2022</h6>
+                        <div class="flex items-center gap-3">
+                            <img src="@/assets/img/icon/tailwind-css-2.svg" alt="Tailwind"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-tailwind">
+                            <img src="@/assets/img/icon/figma.svg" alt="Figma"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-figma">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="overflow-hidden group border-[0.2px] border-paraVal">
+                    <img src="@/assets/img/project/real-estate.webp" alt="Web Real Estate" class="">
+                    <div
+                        class="card-body px-6 py-5 bg-bgVal dark:bg-project group-hover:bg-textLight transition duration-300">
+                        <h5
+                            class="font-semibold lg:text-lg text-textLight dark:text-secondary mb-2 group-hover:text-white transition duration-300">
+                            Real
+                            Estate Landing Page</h5>
+                        <h6
+                            class="text-paraVal text-sm font-medium dark:text-secondary mb-5 transition duration-300">
+                            Landing Page – Frontend • 2022</h6>
+                        <div class="flex items-center gap-3">
+                            <img src="@/assets/img/icon/tailwind-css-2.svg" alt="Tailwind"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-tailwind">
+                            <img src="@/assets/img/icon/figma.svg" alt="Figma"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-figma">
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="overflow-hidden group border-[0.2px] border-paraVal">
+                    <img src="@/assets/img/project/haidoc.webp" alt="HaiDoc Web" class="">
+                    <div
+                        class="card-body px-6 py-5 bg-bgVal dark:bg-project group-hover:bg-textLight transition duration-300">
+                        <h5
+                            class="font-semibold lg:text-lg text-textLight dark:text-secondary mb-2 group-hover:text-white transition duration-300">
+                            HaiDoc Landing Page</h5>
+                        <h6
+                            class="text-paraVal text-sm font-medium dark:text-secondary mb-5 transition duration-300">
+                            Landing Page – Frontend • 2022</h6>
+                        <div class="flex items-center gap-3">
+                            <img src="@/assets/img/icon/tailwind-css-2.svg" alt="Tailwind"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-tailwind">
+                            <img src="@/assets/img/icon/figma.svg" alt="Figma"
+                                class="w-5 lg:w-6 grayscale group-hover:grayscale-0 transition duration-500"
+                                data-tooltip-target="tooltip-figma">
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-- built section end -->
+
+<!-- project section start -->
+<section id="project" class="pb-48">
+        <div class="container mx-auto project lg:w-[85%] relative">
+            <h4
+                class="font-bold lg:font-black font-tungsten dark:text-white text-4xl lg:text-5xl text-center uppercase">
+                Noteworthy
+                <span class="text-redval">Achievement</span>
+            </h4>
+            <a href="achievement.html">
+                <h5 class="font-semibold text-project dark:text-primary text-lg lg:text-xl mt-4 mb-5 text-center">
+                    View the archive</h5>
+            </a>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 lg:gap-10">
+                <div class="w-full dark:bg-project px-5 py-5 relative transition duration-500 ease-in-out group">
+                    <div class="relative">
+                        <div class="element-animate">
+                        </div>
+                        <img src="@/assets/img/achievement/peserta_terbaik.png" alt="Sertifikat Dicoding Javascript"
+                            class="transition duration-500 ease-in-out w-full h-56 object-cover object-top">
+                    </div>
+                    <a href="#"
+                        class="font-semibold text-headingval dark:text-secondary dark:hover:text-primary text-lg lg:text-xl uppercase mt-6 mb-5 block transition duration-500 ease-in-out">
+                        <div class="flex gap-5 lg:gap-7">
+                            <p class="text-xs dark:text-secondary text-headingval">2022</p>
+                            <p class="text-xs dark:text-secondary text-redval">Certificate</p>
+                        </div>
+                        <h4 class="font-bold mt-4 lg:mt-5">Best Participant of DTS VSGA Program Online Training
+                            in 2022
+                        </h4>
+                    </a>
+                </div>
+                <div class="w-full dark:bg-project px-5 py-5 relative transition duration-500 ease-in-out group">
+                    <div class="relative">
+                        <div class="element-animate">
+                        </div>
+                        <img src="@/assets/img/achievement/sertifikat best student.webp" alt="Pelita Nusantara Vocational
+                                Highschool Certificate"
+                            class="transition duration-500 ease-in-out w-full h-56 object-cover object-top">
+                    </div>
+                    <a href="#"
+                        class="font-semibold text-headingval dark:text-secondary dark:hover:text-primary text-lg lg:text-xl uppercase mt-6 mb-5 block transition duration-500 ease-in-out">
+                        <div class="flex gap-5 lg:gap-7">
+                            <p class="text-xs dark:text-secondary text-headingval">2022</p>
+                            <p class="text-xs dark:text-secondary text-redval">Certificate</p>
+                        </div>
+                        <h4 class="font-bold mt-4 lg:mt-5">The First Best Student of "Software Engineering"</h4>
+                    </a>
+                </div>
+                <div class="w-full dark:bg-project px-5 py-5 relative transition duration-500 ease-in-out group">
+                    <div class="relative">
+                        <div class="element-animate">
+                        </div>
+                        <img src="@/assets/img/achievement/sertifikat best student rpl.webp" alt="Pelita Nusantara Vocational
+                                Highschool Certificate"
+                            class="transition duration-500 ease-in-out w-full h-56 object-cover object-top">
+                    </div>
+                    <a href="#"
+                        class="font-semibold text-headingval dark:text-secondary dark:hover:text-primary text-lg lg:text-xl uppercase mt-6 mb-5 block transition duration-500 ease-in-out">
+                        <div class="flex gap-5 lg:gap-7">
+                            <p class="text-xs dark:text-secondary text-headingval">2022</p>
+                            <p class="text-xs dark:text-secondary text-redval">Certificate</p>
+                        </div>
+                        <h4 class="font-bold mt-4 lg:mt-5">The First Best Student of The Years "Software
+                            Engineering"
+                        </h4>
+                    </a>
+                </div>
+            </div>
+            <div
+                class="p-2 border-[1px] border-borderval dark:border-primary relative h-fit w-fit left-1/2 -translate-x-1/2">
+                <div class="w-2 h-3 bg-bgVal dark:bg-background top-1/2 absolute -translate-y-1/2 -left-1">
+                </div>
+                <div class="w-2 h-2 bg-bgVal z-[99] dark:bg-background absolute top-1 left-1">
+                </div>
+                <div class="w-2 h-2 bg-bgVal z-[99] dark:bg-background absolute bottom-1 right-1">
+                </div>
+                <div class="w-2 h-3 bg-bgVal dark:bg-background top-1/2 absolute -translate-y-1/2 -right-1">
+                </div>
+                <a href="achievement.html"
+                    class="buttonAnimate relative text-textLight dark:text-primary dark:font-extralight w-72 py-2 px-10 border-[1px] border-textLight dark:border-primary text-center block mx-auto hover:text-bgLight dark:hover:text-background transition duration-300 ease-in">Show
+                    More</a>
+            </div>
+
+            <div
+                class="stroke font-tungsten text-7xl lg:text-[250px] absolute bottom-10 lg:-left-[10%] uppercase -z-10">
+                Achievement
+            </div>
+        </div>
+    </section>
+    <!-- project section end -->
+
+    <!-- contact section start -->
+    <section id="contact" class="pb-40">
+        <div class="container mx-auto px-4">
+            <h1
+                class="font-bold lg:font-black font-tungsten dark:text-white text-7xl lg:text-8xl mb-5 lg:mb-20 text-center uppercase">
+                Get in touch</h1>
+            <p class="mb-20 text-center">Although I’m not currently looking for any new opportunities, my inbox
+                is always open. Whether you have a question or just want to say hi, I’ll try my best to get back
+                to you!</p>
+            <a href="https://www.instagram.com/azkazikna/"
+                class="px-10 py-3 text-bgLight dark:text-background font-bold text-center block mx-auto bg-textLight dark:bg-primary w-72">Say
+                Hello</a>
+        </div>
+    </section>
+    <!-- contact section end -->
+    
+</template>
+
+<script>
+    import { Swiper, SwiperSlide } from 'swiper/vue';
+    import 'swiper/css'
+    import 'swiper/css/pagination';
+
+    export default {
+        components: {
+        Swiper,
+        SwiperSlide,
+        },
+        data() {
+            return {
+                activeTab: 'freelance', // Set the initial active tab here
+            };
+        },
+    };
+</script>
